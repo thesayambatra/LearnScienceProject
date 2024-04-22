@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#3498db;
+   --dark-blue:#2980b9;
+   --red:#e74c3c;
+   --dark-red:#c0392b;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+.btn,
+.delete-btn{
+   width: 100%;
+   border-radius: 5px;
+   padding:10px 30px;
+   color:var(--white);
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 10px;
+}
+
+.btn{
+   background-color: var(--blue);
+}
+
+.btn:hover{
+   background-color: var(--dark-blue);
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.delete-btn:hover{
+   background-color: var(--dark-red);
+}
+
+.message{
+   margin:10px 0;
+   width: 100%;
+   border-radius: 5px;
+   padding:10px;
+   text-align: center;
+   background-color: var(--red);
+   color:var(--white);
+   font-size: 20px;
+}
+/* Updated CSS with styling for new fields */
+:root {
+   --light-bg: #f7f7f7;
+   --white: #ffffff;
+   --black: #333333;
+   --red: #ff3e6c;
+   --blue: #4a90e2;
+   --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ body {
+   margin: 0;
+   font-family: 'Segoe UI', sans-serif;
+   background: linear-gradient(to right, #A1C4FD  , #C2E9FB);
+ }
+ 
+ .form-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 20px;
+ }
+ .logo-container {
+   display: flex;
+   margin-bottom: 10px;
+
+}
+
+.logo-container img {
+   width: 80px; /* Adjust as needed */
+   height: auto;
+}
+
+.top-container-form{
+   width: 200%;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   display: flex;
+   align-items: center; /* Vertically center contents */
+   padding: 10px 20px;
+}
+.rn{
+   font-size: 32px;
+   margin: 0;
+}
+
+ .form-container form {
+   background: linear-gradient(to bottom, #A1C4FD, #C2E9FB);
+   border: 1px solid #ddd;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: 10px;
+   overflow: hidden;
+   max-width: 600px;
+   width: 100%;
+   padding: 40px;
+   position: relative;
+ }
+ 
+ 
+ .form-container form .box {
+   background-color: #f5f5f5;
+   border-radius: 8px;
+   padding: 18px;
+   margin-bottom: 20px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .form-container form .box:hover {
+   background-color: #e0e0e0;
+ }
+ 
+ .form-container form input[type="text"],
+ .form-container form input[type="email"],
+ .form-container form input[type="password"],
+ .form-container form select {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   transition: border-color 0.3s ease;
+ }
+ 
+ .form-container form input[type="text"]:focus,
+ .form-container form input[type="email"]:focus,
+ .form-container form input[type="password"]:focus,
+ .form-container form select:focus {
+   border-color: var(--blue);
+ }
+ 
+ .form-container form button {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 5px;
+   background-color: var(--blue);
+   color: var(--white);
+   font-size: 18px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .form-container form button:hover {
+   background-color: #357ebd;
+ }
+ 
+ .form-container form p {
+   font-size: 16px;
+   color: var(--black);
+   margin-top: 15px;
+ }
+ 
+ .form-container form p a {
+   color: var(--red);
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .form-container form p a:hover {
+   color: #d8315b;
+ }
+ 
+ @media (min-width: 768px) {
+   .form-container form {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     column-gap: 20px;
+   }
+ 
+   .form-container form .box {
+     grid-column: span 2;
+   }
+ 
+   .form-container form input[type="password"],
+   .form-container form input[type="confirm"] {
+     grid-column: span 1;
+   }
+ 
+   .form-container form button {
+     grid-column: span 2;
+   }
+ }
+ 
+ .container {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Center content horizontally */
+   padding: 20px;
+   width: 100%; /* Full width */
+ }
+ 
+ .container .profile {
+   display: flex; /* Use flexbox for layout */
+   padding: 20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: 5px;
+   width: 100%;
+ }
+ 
+ .container .profile img {
+   width: 460px; /* Adjust image width as needed */
+   height: auto;
+   border-radius: 5px; /* Rounded corners for the image */
+   margin-right: 20px; /* Space between image and text */
+   transition: transform 0.3s ease; /* Smooth transition on hover */
+ }
+ 
+ .container .profile img:hover {
+   transform: scale(1.1); /* Scale up the image on hover */
+ }
+ 
+ .info {
+   flex-grow: 1;
+   text-align: left; /* Align text to the left */
+ }
+ 
+ .info h3 {
+   font-size: 28px; /* Increase font size for heading */
+   margin-bottom: 10px; /* Add some space below the heading */
+ }
+ 
+ .info p {
+   font-size: 30px; /* Increase font size for paragraphs */
+   color: var(--black);
+   margin-bottom: 20px; /* Add space between paragraphs */
+ }
+ 
+ .container .profile p a {
+   color: var(--red);
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .container .profile p a:hover {
+   color: var(--dark-red); /* Darken link color on hover */
+   text-decoration: underline;
+ }
+ .top-container {
+   width: 100%;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .logo {
+   max-width: 120px;
+   margin-right: 20px;
+}
+.update-profile form{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 700px;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.update-profile form img{
+   height: 200px;
+   width: 200p;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+.update-profile form .flex{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   gap:15px;
+}
+
+.update-profile form .flex .inputBox{
+   width: 49%;
+}
+
+.update-profile form .flex .inputBox span{
+   text-align: left;
+   display: block;
+   margin-top: 15px;
+   font-size: 17px;
+   color:var(--black);
+}
+
+.update-profile form .flex .inputBox .box{
+   width: 100%;
+   border-radius: 5px;
+   background-color: var(--light-bg);
+   padding:12px 14px;
+   font-size: 17px;
+   color:var(--black);
+   margin-top: 10px;
+}
+
+@media (max-width:650px){
+   .update-profile form .flex{
+      flex-wrap: wrap;
+      gap:0;
+   }
+   .update-profile form .flex .inputBox{
+      width: 100%;
+   }
+}
